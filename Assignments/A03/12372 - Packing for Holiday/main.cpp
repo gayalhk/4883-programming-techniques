@@ -5,8 +5,8 @@
 // Course:           CMPS 4883 Programming Techniques
 // Proffessor:       Dr Terry Griffin
 //
-// Description:      This program takes 3 values (legth,width and height) and   
-//                   checks if it fits a 20x20x20 suitcase.
+// Description:      This program takes 3 values (legth,width and height of a box)   
+//                    and checks if it fits a 20x20x20 suitcase.
 //                   
 //
 /////////////////////////////////////////////////////////////////////////////////
