@@ -28,7 +28,7 @@ int main(){
   for(int i = 0; i < T; i++){
     infile >> length >> width >> height;
 
-    if((length<=20) && (height<=20) && (height<=20)){
+    if((length<=20) && (width<=20) && (height<=20)){
       cout << "Case " << i+1 << ": good" << endl;
     }
     
