@@ -26,7 +26,7 @@ int main(){
 
   while (running){                     
         for (int i = 0; i < DeckOfCards.size(); i++){
-          cin >> Card;
+          infile >> Card;
           if (Card == "#"){
                 i = 100;
                 running = false;}
