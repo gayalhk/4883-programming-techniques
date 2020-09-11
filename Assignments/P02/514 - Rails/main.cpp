@@ -16,14 +16,14 @@ using namespace std;
 
 int main(){
     ifstream infile;
-    infile.open("input.txt");
+    infile.open("input.txt"); //opemn input file
 
-    vector <int> Train;
-    int index, N, C_id;
+    vector <int> Train; //The train vector
+    int index, N, C_id; // index=index of vector, N=number of coaches, C_id=coach number
     stack <int> s;
-    bool YES;
+    bool YES; //boolean that decides if the order is correct
     
-    infile>>N;
+    infile>>N; //read in the first case
 
     while(N!=0){
         infile>>C_id;
