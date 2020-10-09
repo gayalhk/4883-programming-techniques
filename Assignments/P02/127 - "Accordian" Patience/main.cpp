@@ -17,8 +17,6 @@
 using namespace std;
 
 int main(){
-  ifstream infile;
-  infile.open("input.txt");
 
   vector<stack<string>> DeckOfCards(52);
   bool running = true;
@@ -26,7 +24,7 @@ int main(){
 
   while (running){                     
         for (int i = 0; i < DeckOfCards.size(); i++){
-          infile >> Card;
+          cin >> Card;
           if (Card == "#"){
                 i = 100;
                 running = false;}
@@ -75,5 +73,4 @@ int main(){
         }
         cout << endl;
     }
-    infile.close();
 }
