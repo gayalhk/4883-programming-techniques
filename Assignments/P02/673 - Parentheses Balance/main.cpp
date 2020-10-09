@@ -1,4 +1,3 @@
-
 //////////////////////////////////////////////////////////////////////////////////
 //
 // Author:           Gayal Hewakuruppu
@@ -18,17 +17,15 @@
 using namespace std;
 
 int main() {
-  ifstream infile;
-  infile.open("input.txt");
   int n;
   stack <char> S;
   string paranthesis;
   
-  infile >> n;
-  getline(infile,paranthesis);
+  cin >> n;
+  getline(cin,paranthesis);
   for(int i=0; i < n; i++){
     bool balanced = false;
-    getline(infile, paranthesis);
+    getline(cin, paranthesis);
     if (paranthesis == ""){
       balanced = true;
       cout << "Yes"<<endl;  
@@ -90,5 +87,4 @@ int main() {
       S.pop();
     }
   }
-  infile.close();
 }
