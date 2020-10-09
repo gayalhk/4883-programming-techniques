@@ -17,16 +17,14 @@
 using namespace std;
 
 int main(){
-  ifstream infile;
-  infile.open("input.txt");
 
   int T;
   int length,width,height;
 
-  infile >> T;
+  cin >> T;
 
   for(int i = 0; i < T; i++){
-    infile >> length >> width >> height;
+    cin >> length >> width >> height;
 
     if((length<=20) && (width<=20) && (height<=20)){
       cout << "Case " << i+1 << ": good" << endl;
@@ -36,5 +34,4 @@ int main(){
       cout << "Case " << i+1 << ": bad" << endl;
     }
   }
-  infile.close();
 }
