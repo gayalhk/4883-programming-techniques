@@ -16,15 +16,13 @@
 using namespace std;
 
 int main() {
-  ifstream infile;
-  infile.open("input.txt");
   int num, first, second;
 
-  infile>>num;
+  cin>>num;
 
   for(int i = 0; i < num; i++)
   {
-    infile >> first >> second;
+    cin >> first >> second;
     if (first > second)
       cout << ">" <<endl;
     else if(first < second)
@@ -32,7 +30,5 @@ int main() {
     else 
       cout << "=" << endl;
   }
-  
-  infile.close();
 
 }
