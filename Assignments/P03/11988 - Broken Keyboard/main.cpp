@@ -19,14 +19,12 @@
 using namespace std;
 
 int main(){
-  ifstream infile;  //Declare infile
-  infile.open("input.txt");    //open input file
   string sentence; //Input string
   stack<string> S; //stack
   queue<char> characters; //queue to store characters in order
   
 
-  while(getline(infile,sentence)){
+  while(getline(cin,sentence)){
     string ind, temp; //String to indicate charactor and temporary string
     ind = "F"; 
     temp = "";
@@ -82,5 +80,4 @@ int main(){
     cout << endl;
     temp= "";
 }
-  infile.close(); //close the input file
 }
