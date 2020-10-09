@@ -16,17 +16,15 @@
 using namespace std;
 
 int main(){
-  ifstream infile;
-  infile.open("input.txt");
 
   int K,x,y, divPoint[2];
 
-  infile>>K;
+  cin>>K;
   while(K!=0){
-    infile>> divPoint[0] >> divPoint[1];
+    cin>> divPoint[0] >> divPoint[1];
 
     for(int i=0;i<K;i++){
-        infile>> x >> y;
+        cin>> x >> y;
 
         if(x > divPoint[0])
       {
@@ -49,7 +47,6 @@ int main(){
       else
         cout << "divisa" << endl;
     }
-    infile>>K;
+    cin>>K;
   }
-  infile.close();
 }
