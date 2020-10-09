@@ -17,20 +17,18 @@
 using namespace std;
 
 int main(){
-  ifstream infile;
-  infile.open("input.txt");
 
   int T,total,amount;
   string command;
   total = 0;
 
-  infile >> T;
+  cin >> T;
 
   for(int i = 0; i < T; i++){
-    infile >> command;
+    cin >> command;
 
     if(command == "donate"){
-      infile >> amount;
+      cin >> amount;
       total += amount;
     }
     
@@ -38,5 +36,4 @@ int main(){
       cout << total <<endl;
     }
   }
-  infile.close();
 }
