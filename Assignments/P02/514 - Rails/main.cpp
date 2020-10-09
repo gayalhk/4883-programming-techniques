@@ -15,18 +15,16 @@
 using namespace std;
 
 int main(){
-    ifstream infile;
-    infile.open("input.txt"); //opemn input file
 
     vector <int> Train; //The train vector
     int index, N, C_id; // index=index of vector, N=number of coaches, C_id=coach number
     stack <int> s;
     bool YES; //boolean that decides if the order is correct
     
-    infile>>N; //read in the first case
+    cin>>N; //read in the first case
 
     while(N!=0){
-        infile>>C_id;
+        cin>>C_id;
         while(C_id!=0){
           Train.push_back(C_id);
         
@@ -36,7 +34,7 @@ int main(){
             YES = true;
 
             for(int x = 1; x<N;x++){
-            infile>> C_id;
+            cin>> C_id;
             Train.push_back(C_id);}
           
             for(int y=0;y<N;y++){
@@ -67,12 +65,11 @@ int main(){
             else{
                 cout << "No\n";}
 
-            infile>>C_id;
+            cin>>C_id;
             }
 
         cout << endl;
         Train.clear();
-        infile>>N;
+        cin>>N;
     }
-    infile.close();
 }
