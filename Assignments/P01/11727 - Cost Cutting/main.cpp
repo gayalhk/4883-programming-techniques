@@ -17,16 +17,14 @@
 using namespace std;
 
 int main(){
-  ifstream infile;
-  infile.open("input.txt");
 
   int T;
   int Salaries[3];
 
-  infile >> T;
+  cin >> T;
 
   for(int i = 0; i < T; i++){
-    infile >> Salaries[0] >> Salaries[1] >> Salaries[2];
+    cin >> Salaries[0] >> Salaries[1] >> Salaries[2];
     for(int a = 0; a < 2; a++)
     {
       for(int b = 0; b < 2 - a; b++)
@@ -41,5 +39,4 @@ int main(){
     }
     cout << "Case " << i+1 << ": " << Salaries[1] << endl;
   }
-  infile.close();
 }
